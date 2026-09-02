@@ -12,17 +12,13 @@ O **EZabnt** elimina a necessidade de configurar margens, estilos de títulos, e
 * **Margens:** 3 cm superior e esquerda; 2 cm inferior e direita.
 * **Tipografia e Parágrafo:** Fontes padronizadas (12 pt), espaçamento 1,5 e recuo de primeira linha (1,25 cm).
 * **Estilos Hierárquicos:** Títulos (seções primárias, secundárias e terciárias) com numeração progressiva e caixa configurada.
-* **Elementos Pré-Textuais:** Capa, folha de rosto, sumário automático e estrutura para elementos opcionais (resumo, listas).
-* **Elementos Pós-Textuais:** Referências com espaçamento simples e recuo padrão.
-
----
+* **Estilos Automáticos** Corpo de Texto, Citação Direta Longa, resumo, autoria, palavras-chave e os estilos mais utilizados já padronizados. Escreva sobre o texto já estilizado ou transforme o seu texto no estilo ABNT correto com um único clique
+* **Fluxo de Texto Programado** automaticamente seleciona o estilo corpo de texto após títulos, citações longas, etc. Deixe sua escrita mais rápida e eficiente!
+* * **Referências** Referências automaticamente formatadas e com exemplos das referências mais utilizadas (de acordo com as normas da ABNT) ao final do texto.
 
 ## 🚀 Como Usar
 
-1. Baixe o arquivo `modelo_abnt.ott` na aba [Releases](../../releases) ou clone o repositório:
-```bash
-git clone https://github.com/seu-usuario/ezabnt.git
-```
+1. Baixe o arquivo `Modelo_Artigo_Cientifico_EZabnt.ott` na aba [Releases](../../releases)
 
 2. **Instalar como modelo padrão no LibreOffice Writer:**
    * Abra o LibreOffice Writer.
@@ -58,6 +54,7 @@ Se este modelo foi útil para o seu trabalho e você deseja incentivar a manuten
 * **LibreOffice:** 7.x ou superior (Recomendado)
 * **Apache OpenOffice:** Suportado
 * **Outros editores compatíveis com ODF (.ott/.odt)**
+* **Microsoft Word e Google Docs:** possível ao converter o arquivo .ott em .dot ou .dotx
 
 ---
 
