@@ -40,7 +40,7 @@ git clone https://github.com/seu-usuario/ezabnt.git
 Se este modelo foi útil para o seu trabalho e você deseja incentivar a manutenção e atualizações do projeto, considere fazer uma doação via Pix:
 
 <div align="center">
-  <img src="pix_qrcode.png" alt="QR Code Pix - Doação EZabnt" width="220" />
+  <img src="pix_qrcode.jpeg" alt="QR Code Pix - Doação EZabnt" width="220" />
 </div>
 
 #### Pix Copia e Cola
