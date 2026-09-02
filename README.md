@@ -45,7 +45,7 @@ Se este modelo foi útil para o seu trabalho e você deseja incentivar a manuten
 
 #### Pix Copia e Cola
 ```text
-00020126500014br.gov.bcb.pix0111800136919610213Doacao_EZabnt5204000053039865802BR5925VICTOR_ROMARIO_ALVES_ZAAK6011JACAREZINHO62290525gI27wHHD904Cm8DEZ0l27zGCw6304B691
+78ed33e5-d307-4044-b8e3-3dc0e6c9660d
 ```
 
 * **Identificação:** Doação EZabnt
