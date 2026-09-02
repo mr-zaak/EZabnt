@@ -35,6 +35,24 @@ git clone https://github.com/seu-usuario/ezabnt.git
 
 ---
 
+## ☕ Apoie o Projeto
+
+Se este modelo foi útil para o seu trabalho e você deseja incentivar a manutenção e atualizações do projeto, considere fazer uma doação via Pix:
+
+<div align="center">
+  <img src="pix_qrcode.png" alt="QR Code Pix - Doação EZabnt" width="220" />
+</div>
+
+#### Pix Copia e Cola
+```text
+00020126500014br.gov.bcb.pix0111800136919610213Doacao_EZabnt5204000053039865802BR5925VICTOR_ROMARIO_ALVES_ZAAK6011JACAREZINHO62290525gI27wHHD904Cm8DEZ0l27zGCw6304B691
+```
+
+* **Identificação:** Doação EZabnt
+* **Titular:** Victor Romário Alves Zaak Saraiva
+
+---
+
 ## 🛠️ Compatibilidade
 
 * **LibreOffice:** 7.x ou superior (Recomendado)
