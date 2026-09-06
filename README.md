@@ -1,65 +1,63 @@
-# EZabnt
+# EZabnt — Referências ABNT no LibreOffice Writer
 
-Automação bibliográfica e modelos pré-formatados segundo a **ABNT NBR 6022** (artigos científicos) e **ABNT NBR 6023** (referências) para o LibreOffice Writer.
-
-O projeto disponibiliza duas abordagens diferentes:
-1. **Extensão (`.oxt`):** Adiciona ao LibreOffice Writer a busca automática de referências por DOI/ISBN e a ordenação alfabética automática para as referências em segundo plano.
-2. **Modelos (`.ott`):** Para quem **não deseja instalar extensões**, bastando abrir o modelo autossuficiente com macro embutida ou o modelo limpo.
+O **EZabnt** automatiza a formatação e a organização de referências bibliográficas segundo as normas da ABNT diretamente no LibreOffice Writer. Você seleciona o texto, clica no botão e a referência formatada entra na seção correta em ordem alfabética.
 
 ---
 
-## 🚀 Guia de Uso
+## O que você pode referenciar
 
-### Opção A: Utilizando a Extensão (`EZabnt-v1.1.0.oxt`)
+Basta colar ou digitar o identificador no texto, selecioná-lo e acionar o EZabnt:
 
-Recomendada para integrar os recursos permanentemente ao LibreOffice.
-
-1. **Instalação:**
-   * Baixe o arquivo `EZabnt-v1.1.0.oxt` na aba [Releases](../../releases).
-   * No Writer, acesse: `Ferramentas` > `Gerenciador de Extensões...` (ou `Ctrl + Alt + E`).
-   * Clique em `Adicionar`, escolha o arquivo baixado e reinicie o LibreOffice.
-   * Alternativamente, baixe o arquivo `EZabnt-v1.1.0.oxt` e clique duas vezes no arquivo. Siga o processo de instalação na janela de instalação do LibreOffice Writer.
-2. **Abra o modelo com facilidade**
-   *Abra o LibreOffice Writer e navegue até Arquivo>Novo>Modelos. O modelo fornecido com a extensão irá aparecer com o título "EZabnt - Artigo Científico ABNT"
-   *Alternativamente, abra o LibreOffice Writer e pressione Ctrl+Shift+N para abrir o menu de modelos.
-4. **Gerar referências via DOI ou ISBN:**
-   * Digite ou cole o identificador em qualquer parte do texto (ex.: `10.1016/j.compositesb.2022.109988` ou `978-85-359-0277-8`)[cite: 3].
-   * Selecione o texto do identificador com o cursor[cite: 7].
-   * Acesse o menu de topo: `EZabnt` > `Gerar Referência (DOI / ISBN)`[cite: 1].
-   * A citação completa será formatada e inserida diretamente na seção de referências[cite: 7].
-5. **Ordenação alfabética automática:**
-   * Basta salvar o documento (`Ctrl + S` ou `Arquivo` > `Salvar`)[cite: 4].
-   * Todas as referências da seção serão reordenadas de A a Z de forma silenciosa, preservando negritos, itálicos e links sem alterar o cabeçalho.
+* **Legislação e Normas:** Leis Ordinárias, Leis Complementares, Decretos, Medidas Provisórias e Emendas Constitucionais (somente a nível federal).
+* **Constituição Federal:** menções a `CF/88` ou `Constituição de 1988`.
+* **Decisões e Processos Judiciais:** numerações de processos do padrão CNJ e ações diretas do STF (ADI, ADC, ADPF, ADO).
+* **Livros:** códigos ISBN (de 10 ou 13 dígitos, nacionais ou estrangeiros).
+* **Artigos e Periódicos:** links ou códigos DOI, artigos do SciELO, arXiv e PubMed (PMID).
 
 ---
 
-### Opção B: Utilizando apenas os Modelos (`.ott` — Sem Instalar Extensão)
+## Principais Recursos da Extensão
 
-Ideal para quem não quer ou não pode instalar extensões de terceiros no LibreOffice:
-
-* **`Artigo_Cientifico_COM_MACRO.ott`:** Modelo pré-configurado contendo o macro de inserção de referências com DOI/ISBN (não requer a extensão `.oxt` instalada).
-* **`Artigo_Cientifico_SEM_MACRO.ott`:** Modelo estritamente tipográfico, sem scripts ou macros.
-
-#### Formas de uso:
-* **Uso direto:** Dê um duplo clique no arquivo `.ott`. O LibreOffice abrirá um novo arquivo de texto editável (`.odt`) mantendo o modelo original preservado.
-* **Adicionar ao gerenciador do LibreOffice:**
-  * Acesse `Arquivo` > `Modelos` > `Gerenciar Modelos` (`Ctrl + Shift + N`).
-  * Clique em `Importar`, selecione o modelo `.ott` e confirme a categoria.
+* **Formatação Automática:** aplica negrito, pontuação e data de acesso conforme as normas da ABNT.
+* **Proteção contra Duplicatas:** identifica se uma referência já está na sua lista e bloqueia inserções repetidas.
+* **Ordenação Alfabética em Tempo Real:** a lista de referências é reorganizada automaticamente a cada nova inserção.
+* **Campos Faltantes Sinalizados:** caso uma base pública não informe algum dado (como cidade ou editora), o programa insere marcadores visíveis como `[Local]` para você localizar facilmente.
 
 ---
 
-## 📌 Recursos e Estrutura Técnica
+## Como Usar
 
-* **Conformidade Normativa:** Estruturação de artigos conforme a **ABNT NBR 6022** e elaboração de referências conforme a **ABNT NBR 6023**.
-* **Busca e Formatação Automatizada:** Integração com as APIs Crossref (periódicos/artigos) e Open Library (livros) para montagem estruturada das entradas bibliográficas[cite: 3]. (Somente com a extensão)
-* **Ordenação Estrita ABNT (PT-BR):** Algoritmo imune a problemas com acentuação e pontuações iniciais (trata caracteres acentuados de forma canônica: "Á" é ordenado junto a "A", e não após o "Z"). (Somente com a extensão)
-* **Preservação de Formatação Interna (`TextPortions`):** A reordenação atua sobre a árvore de objetos do Writer, conservando destaques em negrito (títulos de obras), itálicos e links ativos.
-* **Tipografia e Parágrafo:** O modelo contempla estilos pré-formatados para seções primárias, secundárias e terciárias (títulos numerados progressivamente), corpo de texto, citações diretas longas, resumo, indicação de autoria, palavras-chave, cabeçalho de seção, título e subtítulo do trabalho e itens individuais de referências bibliográficas. Fontes, espaçamento e recuo de primeira linha padronizados de acordo com as normas da ABNT. 
-* **Margens:** 3 cm superior e esquerda; 2 cm inferior e direita.
-*  **Paginação:** Paginação que obedece as normas da ABNT e é inserida de forma automática.
-* **Estilos Hierárquicos e de Fluxo:** Seções com numeração progressiva e alternância automática de estilos ao teclar `Enter`.
+1. Use o modelo pré-configurado `modelo_referencias_abnt.ott` (ou garanta que seu documento possua uma seção chamada `SecaoReferencias`).
+2. Digite ou cole o identificador em qualquer parte do texto (ex.: `Lei 14.133/2021`, um ISBN ou DOI).
+3. Selecione o identificador com o mouse.
+4. Clique no botão do **EZabnt** na barra de ferramentas:
+   * O identificador é removido do texto corrente.
+   * A referência pronta é inserida na seção de referências.
+   * A lista completa é reordenada alfabeticamente.
 
 ---
+## Modelo de Artigo Científico (`.ott`)
+
+Template em formato **OpenDocument Text Template (`.ott`)**, desenvolvido para o LibreOffice Writer e compatíveis, projetado para eliminar o atrito de formatação e estruturação durante a escrita acadêmica. **(modelo já vem instalado junto com a extensão .oxt)**
+
+### O que o modelo entrega:
+
+* **Estrutura pré-definida:** Seções canônicas de um artigo científico já organizadas (Título, Autoria, Resumo/Abstract, Palavras-chave, Introdução, Desenvolvimento, Conclusão e Referências).
+* **Hierarquia e estilos de parágrafo:** Configuração pronta para títulos numerados (H1, H2, H3), corpo de texto com recuo padrão, citações diretas longas (recuo de 4 cm e fonte reduzida), paginação adequada (pula a primeira página e se situa no local correto) e notas de rodapé.
+* **Padronização dimensional:** Margens, entrelinhamento (1,5) e tipografia já configurados conforme os padrões acadêmicos.
+* **Segurança na edição:** Por ser um arquivo `.ott`, ao abri-lo o editor cria automaticamente um novo documento `.odt` sem risco de sobrescrever o template original.
+
+### Como usar:
+1. Baixe o arquivo `modelo.ott`.
+2. Dê um duplo clique para abrir diretamente no LibreOffice Writer (ou acesse via `Arquivo` > `Modelos` > `Gerenciar modelos` para instalá-lo permanentemente).
+3. Substitua o texto de exemplo pelo conteúdo da sua pesquisa.
+
+## Instalação (extensão .oxt)
+
+1. Baixe o arquivo **`EZabnt-v1.1.1.oxt`** na aba de **Releases**.
+2. Abra o LibreOffice e acesse **Ferramentas** > **Gerenciador de Extensões...** (`Ctrl + Alt + E`).
+3. Clique em **Adicionar**, selecione o arquivo baixado e confirme.
+4. Reinicie o LibreOffice.
 
 ## ☕ Apoie o Projeto
 
