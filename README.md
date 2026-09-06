@@ -27,7 +27,7 @@ Basta colar ou digitar o identificador no texto, selecioná-lo e acionar o EZabn
 
 ## Como Usar
 
-1. Use o modelo pré-configurado `modelo_referencias_abnt.ott` (ou garanta que seu documento possua uma seção chamada `SecaoReferencias`).
+1. Use o modelo pré-configurado(ou garanta que seu documento possua uma seção chamada `SecaoReferencias`).
 2. Digite ou cole o identificador em qualquer parte do texto (ex.: `Lei 14.133/2021`, um ISBN ou DOI).
 3. Selecione o identificador com o mouse.
 4. Clique no botão do **EZabnt** na barra de ferramentas:
